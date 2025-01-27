@@ -7,15 +7,30 @@
 
     <link rel="stylesheet" href="indexHtml.css">
     <style>
-        p{
+        .para{
             background-color: black;
             color: white;
             display:block;
         }
+        
+        #message
+        {
+            color: green;
+        }
     </style>
 </head>
 <body>
-    <p>Sonal Bhimrao Patil</p>
-    <p>Sonal Bhimrao Patil</p>
+    <p class="para">Sonal Bhimrao Patil</p>
+    <p  class="para">Sonal Bhimrao Patil</p>
+    <button type="submit" id="submit">Click here</button>
+    <p id="message"></p><br>
+
+    <script>
+        const button = document.getElementById('submit')
+        button.addEventListener('click',function()
+        {
+            document.getElementById('message').textContent = "Data submited"
+        })
+    </script>
 </body>
 </html>
